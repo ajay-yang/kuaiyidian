@@ -1,0 +1,20 @@
+<div id='showshopTable' class="tab-pane fade in active" >
+	 <table class="table table-striped table-bordered table-hover dataTables-example">
+	 	<caption>饭店列表</caption>
+        <tr>
+            <th>饭店名称</th>
+            <th>饭店类型</th>
+            <th>操作</th>
+        </tr>
+        <% rs.forEach(function(item){ %>
+        <tr>
+        	<td><%-item.shopname %></td>
+        	<td><%-item.shoptype %></td>
+        	<td>
+        		<button class='btn btn-info'>修改</button>
+        		<button class='btn btn-danger'>删除</button>
+        	</td>
+        </tr>
+        <%})%>
+	</table>
+</div>

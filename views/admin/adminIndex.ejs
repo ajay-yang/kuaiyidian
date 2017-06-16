@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <link href="../dis/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../dis/style.css" rel="stylesheet">
+    <!--地图信息-->
+	<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main.css?v=1.0"/>
+ 	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=ebb3310e602e7027987911af5e30be56"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                        	<span>
+                            <img alt="image" class="img-circle" src="../images/toux.jpg" />
+                          </span>
+	                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+	                            <span class="clear">
+	                            	<span class="block m-t-xs">
+	                            		<strong class="font-bold">admin</strong>
+	                         			</span>  
+	                         			<span class="text-muted text-xs block">个人中心 <b class="caret"></b></span> 
+	                            </span>
+	                        </a>
+	                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+	                            <li><a href="#">修改头像</a>
+	                            </li>
+	                            <li><a href="#">个人资料</a>
+	                            </li>
+	                            <li><a href="#">联系我们</a>
+	                            </li>
+	                            <li><a href="#">信箱</a>
+	                            </li>
+	                            <li class="divider"></li>
+	                            <li><a href="#s">安全退出</a>
+	                            </li>
+	                        </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#bar1"  class="nav-header" data-toggle="collapse">
+	                        	<i class="glyphicon glyphicon-th-list"></i>
+									主页
+								<span class="pull-right glyphicon glyphicon-chevron-down"></span>                        	
+                        </a>
+                        <ul id='bar1' class="nav nav-list collapse ">
+                            <li><a href="#">主页示例一</a>
+                            </li>
+                            <li><a href="#">主页示例二</a>
+                            </li>
+                            <li><a href="#">主页示例三</a>
+                            </li>
+                            <li><a href="#">主页示例四</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                     <li>
+                        <a href="#bar2"  class="nav-header" data-toggle="collapse">
+	                        	<i class="glyphicon glyphicon-th-list"></i>
+															主页
+														<span class="pull-right glyphicon glyphicon-chevron-down"></span>                        	
+                        </a>
+                        <ul id='bar2' class="nav nav-list collapse ">
+                            <li><a href="#">主页示例一</a>
+                            </li>
+                            <li><a href="#">主页示例二</a>
+                            </li>
+                            <li><a href="#">主页示例三</a>
+                            </li>
+                            <li><a href="#">主页示例四</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                     <li>
+                        <a href="#bar3"  class="nav-header" data-toggle="collapse">
+	                        	<i class="glyphicon glyphicon-th-list"></i>
+															主页
+														<span class="pull-right glyphicon glyphicon-chevron-down"></span>                        	
+                        </a>
+                        <ul id='bar3' class="nav nav-list collapse ">
+                            <li><a href="#">主页示例一</a>
+                            </li>
+                            <li><a href="#">主页示例二</a>
+                            </li>
+                            <li><a href="#">主页示例三</a>
+                            </li>
+                            <li><a href="#">主页示例四</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                     <li>
+                        <a href="#bar4"  class="nav-header" data-toggle="collapse">
+	                        	<i class="glyphicon glyphicon-th-list"></i>
+															主页
+														<span class="pull-right glyphicon glyphicon-chevron-down"></span>                        	
+                        </a>
+                        <ul id='bar4' class="nav nav-list collapse ">
+                            <li><a href="#">主页示例一</a>
+                            </li>
+                            <li><a href="#">主页示例二</a>
+                            </li>
+                            <li><a href="#">主页示例三</a>
+                            </li>
+                            <li><a href="#">主页示例四</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="glyphicon glyphicon-search"></i> </a>
+                        <form role="search" class="navbar-form-custom" method="post" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="请输入您需要查找的内容 …" class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message"><a href="#" title="返回首页"><i class="fa fa-home"></i></a>欢迎来到K+后台</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            	<span>
+                            		消息
+                            	</span>
+                           		<span class="badge" style='background-color:red;color:white'>50</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="mailbox.html">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
+                                            <span class="pull-right text-muted small">4分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="profile.html">
+                                        <div>
+                                            <i class="fa fa-qq fa-fw"></i> 3条新回复
+                                            <span class="pull-right text-muted small">12分钟钱</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <div class="text-center link-block">
+                                        <a href="notifications.html">
+                                            <strong>查看所有 </strong>
+                                            <i class="fa fa-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+<!--面包屑-->
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>请填写店铺信息</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="">主页</a>
+                        </li>
+                        <li>
+                            <strong>店铺信息</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>填写店铺信息</h5>
+                            </div>
+                            <div class="ibox-content">
+                            
+                            	<ul id="myTab" class="nav nav-tabs">
+								    <li class="active">
+									    <a href="#showshopTable" data-toggle="tab">饭店列表 </a>
+								    </li>
+								    <li>
+								    	<a href="#createShop" data-toggle="tab">创建饭店</a>
+								    </li> 
+                            	</ul>
+     
+                            	<div class="tab-content">
+                            		<% include ./showshopTable %>
+	                            	<% include ./createShop %>
+                            	</div>
+  								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    By：<a href="http://www.lansou.net" target="_blank">ajay工作室</a>
+                </div>
+                <div>
+                    <strong>Copyright</strong> K+ &copy; 2017
+                </div>
+            </div> 
+        </div>
+</div>
+<!--地图--模态框-->
+ <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">点击选择店铺位置</h4>
+            </div>
+            <div class="modal-body" style='height:300px;width：auto'>
+            	<!--显示地图信息-->
+            	<div id='mapContainer'>
+            		
+            	</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary" onclick='subLocation()' data-dismiss="modal">提交位置</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../dis/jquery-2.1.4.min.js"></script>
+<script src="../dis/bootstrap.min.js"></script>
+
+<!--调用地图-->
+<script>
+ //初始化地图对象，加载地图
+    var map = new AMap.Map('mapContainer', {
+        view: new AMap.View2D({
+            center: new AMap.LngLat(116.192389, 39.938226),
+            zoom: 12
+        })
+    });
+    //---地图工具bar
+    AMap.plugin(['AMap.ToolBar','AMap.Scale','AMap.OverView'],
+    
+    function(){
+        map.addControl(new AMap.ToolBar());
+
+        map.addControl(new AMap.Scale());
+
+        map.addControl(new AMap.OverView({isOpen:true}));
+    });
+
+    //---地图监听事件
+     var evt=null;
+    function eventHandler(event){
+    	 evt = event;
+    	 //---添加标
+    	 var marker = new AMap.Marker({  
+			map:map,                 
+			position:evt.lnglat,  
+			iconStyle: '//webapi.amap.com/theme/v1.3/markers/b/mark_r.png',
+			offset:new AMap.Pixel(-10,-30) 
+	    }); 
+	    //---地图标与点击的偏移量
+		marker.setLabel({
+	        offset: new AMap.Pixel(10, 20),
+	   });
+	   
+        
+    }
+ 	var listener = AMap.event.addListener(map,"click",eventHandler);
+//---点击提交位置
+	 function subLocation(){
+		pubform.lng.value=evt.lnglat.getLng(); //经度
+	    pubform.lat.value=evt.lnglat.getLat(); //维度
+	}
+        
+</script>
+
+</body>
+</html>
